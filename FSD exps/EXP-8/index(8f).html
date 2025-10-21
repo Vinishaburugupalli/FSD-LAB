@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bank Amount Denomination</title>
+</head>
+<body>
+  <h2>Bank Amount Denomination</h2>
+  <label>Enter the amount: </label>
+  <input type="number" id="amount">
+  <button onclick="showDenomination()">Show Denomination</button>
+
+  <div id="result"></div>
+
+  <script>
+    function showDenomination() {
+      let amount = parseInt(document.getElementById("amount").value);
+      let denominations = [100, 50, 10, 5, 2, 1];
+      let result = "<b>Denomination breakdown for " + amount + ":</b><br>";
+
+      denominations.forEach(function(denom) {
+        let count = Math.floor(amount / denom);
+        result += count + " - " + denom + "'s<br>";
+        amount = amount % denom;
+      });
+
+      document.getElementById("result").innerHTML = result;
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Object Styled Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #d35400;
+    }
+    .output-box {
+      width: 450px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff0e6;
+      border: 2px solid #e67e22;
+      border-radius: 10px;
+      box-shadow: 2px 2px 12px #aaa;
+    }
+    .method {
+      color: #c0392b;
+      font-weight: bold;
+    }
+    p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <h2>String Object Properties and Methods</h2>
+  <div class="output-box" id="demo"></div>
+  <script>
+    let str1 = "Hello World";
+    let str2 = "JavaScript";
+    let output = `<p><span class="method">Original String:</span> ${str1}</p>`;
+    output += `<p><span class="method">String Length:</span> ${str1.length}</p>`;
+    output += `<p><span class="method">Uppercase:</span> ${str1.toUpperCase()}</p>`;
+    output += `<p><span class="method">Lowercase:</span> ${str1.toLowerCase()}</p>`;
+    output += `<p><span class="method">Character at index 4:</span> ${str1.charAt(4)}</p>`;
+    output += `<p><span class="method">Index of 'World':</span> ${str1.indexOf("World")}</p>`;
+    output += `<p><span class="method">Concatenation with '${str2}':</span> ${str1.concat(" ", str2)}</p>`;
+    output += `<p><span class="method">Slice (0,5):</span> ${str1.slice(0,5)}</p>`;
+    output += `<p><span class="method">Replace 'World' with 'Lavanya':</span> ${str1.replace("World", "Lavanya")}</p>`;
+
+    document.getElementById("demo").innerHTML = output;
+  </script>
+</body>
+</html>

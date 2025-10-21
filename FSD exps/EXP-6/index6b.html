@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>JavaScript Output Methods</title> 
+  <style> 
+    body { 
+      font-family: Arial, sans-serif; 
+      background-color: #f5f5f5; 
+      margin: 0; 
+      padding: 20px; 
+      text-align: center; 
+    } 
+ 
+    h1 { 
+      color: #333; 
+      margin-bottom: 30px; 
+    } 
+ 
+    .output-box { 
+      background-color: #fff; 
+      border: 2px solid #4CAF50; 
+      padding: 20px; 
+      margin: 20px auto; 
+      width: 60%; 
+      border-radius: 8px; 
+      font-size: 18px; 
+      color: #333; 
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1); 
+    } 
+  </style> 
+</head> 
+<body> 
+  <h1>JavaScript Output Demonstration</h1> 
+ 
+  <div class="output-box document-write-output" id="docWriteOutput"></div> 
+  <div class="output-box" id="output"></div> 
+ 
+  <button onclick="showAlert()">Click for Alert Output</button> 
+  <button onclick="consoleLogOutput()">Click for Console Output</button> 
+  <script> 
+    document.getElementById("docWriteOutput").innerHTML = 
+      "1. This is output using document.write()";   
+    function showAlert() { 
+      alert("2. This is output using alert()"); 
+    }  
+    function consoleLogOutput() { 
+      console.log("3. This is output using console.log()"); 
+      alert("Check the console (F12 → Console) to see the output"); 
+    } 
+ 
+     
+    document.getElementById("output").innerHTML = 
+      "4. This is output using innerHTML"; 
+  </script> 
+</body> 
+</html> 

@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document Object Example</title>
+</head>
+<body>
+  <h2>Using Document Object Properties and Methods</h2>
+  <p id="info"></p>
+  <button onclick="showDocDetails()">Show Document Details</button>
+  <button onclick="changeBG()">Change Background Color</button>
+  <script>
+    function showDocDetails() {
+       let details = "Title: " + document.title + "<br>" +
+                    "URL: " + document.URL + "<br>" +
+                    "Domain: " + document.domain + "<br>" +
+                    "Last Modified: " + document.lastModified;
+
+     
+      document.getElementById("info").innerHTML = details;
+    }
+    function changeBG() {
+     
+      document.body.style.backgroundColor = "lightgreen";
+    }
+  </script>
+</body>
+</html>  
+

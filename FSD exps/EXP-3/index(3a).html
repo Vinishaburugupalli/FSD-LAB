@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kim Taehyung (V) — Fan Page</title>
+  <style>
+    :root{
+      --nav:#004080;
+      --header:#003366;
+      --accent:#862020;
+      --badge-bg:darkblue;
+      --aside-bg:#fff4e6;
+    }
+
+    body{
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      margin:0;
+      line-height:1.45;
+      color:#111;
+    }
+
+    header{
+      background:var(--header);
+      color:#fff;
+      padding:18px 20px;
+    }
+    header h1{ margin:0 0 6px; font-size:1.6rem; }
+    header p{ margin:0; opacity:0.95; }
+
+    nav{
+      background:var(--nav);
+      padding:8px 20px;
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      padding:6px 8px;
+      border-radius:4px;
+    }
+    nav a:hover{ opacity:0.9; }
+
+    main{
+      display:flex;
+      gap:20px;
+      padding:20px;
+    }
+    article{ flex:2; min-width:260px; }
+    aside{ flex:1; background:var(--aside-bg); padding:16px; border-radius:6px; min-width:200px; }
+
+    section{ margin-top:16px; }
+
+    figure{ text-align:center; margin:16px 0; }
+    figure img{ max-width:100%; height:auto; border-radius:8px; display:block; margin:0 auto; }
+    figcaption{ font-size:0.9rem; margin-top:6px; color:#333; }
+
+    .highlight{ color:var(--accent); font-weight:600; }
+    .badge{ background:var(--badge-bg); color:#fff; padding:2px 8px; border-radius:6px; font-size:0.85rem; }
+
+    ul{ margin:8px 0 0 20px; }
+    .life p{ margin:6px 0; }
+
+    footer{
+      background:var(--nav);
+      color:#fff;
+      padding:16px 20px;
+      text-align:center;
+      margin-top:24px;
+    }
+
+    /* small responsive tweak */
+    @media (max-width:760px){
+      main{ flex-direction:column; padding:12px; }
+      nav{ overflow:auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kim Taehyung — V (BTS)</h1>
+    <p>South Korean singer, songwriter, actor — member of BTS (Bangtan Sonyeondan)</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="#career">Career</a>
+    <a href="#works">Works</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <article id="career" aria-labelledby="career-heading">
+      <h2 id="career-heading">Career & Biography</h2>
+      <p>
+        Kim Tae-hyung, known professionally as <span class="highlight">V</span>, was born on
+        <span class="highlight">December 30, 1995</span> in Daegu, South Korea. He debuted as a
+        member of the global K-pop group BTS in 2013 and is known for his deep, warm vocal tone,
+        charismatic stage presence, and artistic creativity.
+      </p>
+
+      <section id="music">
+        <h3>Music & Style</h3>
+        <p>
+          V's voice is often described as rich and soulful; he has contributed vocals and songwriting
+          to many BTS tracks and to his solo releases. He blends genres — pop, jazz, R&B — and is
+          celebrated for his experimental approach to melody and mood.
+        </p>
+      </section>
+
+      <section id="acting">
+        <h3>Acting</h3>
+        <p>
+          V made his acting debut with a supporting role in the historical drama <em>Hwarang</em>
+          (2016). He continues to explore acting alongside his music career.
+        </p>
+      </section>
+
+      <section id="works">
+        <h3>Notable Works & Solo Releases</h3>
+        <ul>
+          <li>Solo songs released with BTS and on soundtracks.</li>
+          <li>Solo tracks and collaborations that highlight his unique vocal color.</li>
+          <li>Frequent participation in songwriting and production.</li>
+        </ul>
+      </section>
+    </article>
+
+    <aside aria-labelledby="fun-heading">
+      <h2 id="fun-heading">Fun Facts</h2>
+      <p><strong>Stage name:</strong> <span class="highlight">V</span> (real name: Kim Tae-hyung)</p>
+      <p><strong>Born:</strong> December 30, 1995 — Daegu, South Korea</p>
+      <p><strong>Also known for:</strong> photography, painting, distinctive fashion sense</p>
+
+      <div class="life" aria-hidden="false">
+        <p><span class="badge">Group</span> BTS (since 2013)</p>
+        <p><strong>Hobbies:</strong> photography, art, collecting vinyl records</p>
+        <p><strong>Acting:</strong> Featured in the drama <em>Hwarang</em> (2016)</p>
+      </div>
+    </aside>
+  </main>
+
+  <section id="gallery" style="padding:0 20px 20px;">
+    <h2>Photo Gallery</h2>
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <figure style="flex:1; min-width:180px; max-width:320px;">
+        <img src="https://i.pinimg.com/736x/64/81/d1/6481d1f79ee2080890ff2abf5d6fa775.jpg" alt="V performing — placeholder" loading="lazy" width="320" height="320">
+        <figcaption>On stage (placeholder)</figcaption>
+      </figure>
+
+      <figure style="flex:1; min-width:180px; max-width:320px;">
+        <img src="https://i.pinimg.com/736x/9e/ee/51/9eee51fe5ac0819f62baf996218fcad9.jpg" alt="V casual portrait — placeholder" loading="lazy" width="320" height="320">
+        <figcaption>Casual portrait (placeholder)</figcaption>
+      </figure>
+
+      <figure style="flex:1; min-width:180px; max-width:320px;">
+        <img src="https://i.pinimg.com/736x/d3/49/19/d34919ea5de8fbcc2ae0ae122a3d65dd.jpg" alt="V photoshoot — placeholder" loading="lazy" width="320" height="320">
+        <figcaption>Photoshoot (placeholder)</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="contact" style="padding:0 20px 30px;">
+    <h2>Contact & Credits</h2>
+    <p>
+      This is a fan page sample created using semantic HTML5 elements. Replace the placeholder images
+      with your own by updating the <code>src</code> attributes, for example:
+    </p>
+    <pre style="background:#f3f3f3;padding:8px;border-radius:6px;overflow:auto;">
+&lt;img src="./images/v-profile.jpg" alt="V portrait" loading="lazy"&gt;
+    </pre>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 V Fan Page — created with HTML5 semantic elements</p>
+  </footer>
+
+</body>
+</html>

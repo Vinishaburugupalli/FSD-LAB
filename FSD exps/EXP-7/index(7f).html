@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Regex Object Example</title>
+  <style>
+    /* body { 
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+    } */
+    h2 {
+      text-align: center;
+      color: #8e44ad;
+    }
+    .output-box {
+      width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f0e6f7;
+      border: 2px solid #9b59b6;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px #aaa;
+    }
+    /* .method {
+      color: #6c3483;
+      font-weight: bold;
+    }
+    p {
+      line-height: 1.6;
+    } */
+   </style>
+</head>
+<body>
+  <h2>Regex Object Properties and Methods</h2>
+  <div class="output-box" id="demo"></div>
+  <script>
+    let str = "The quick brown fox jumps over the lazy dog. 123 times!";
+    let regex = /\b\w{4}\b/g; 
+    let output = `<p><span class="method">Original String:</span> ${str}</p>`;
+    output += `<p><span class="method">Regex Pattern:</span> ${regex.source}</p>`;
+    output += `<p><span class="method">Global Flag:</span> ${regex.global}</p>`;
+    output += `<p><span class="method">Ignore Case Flag:</span> ${regex.ignoreCase}</p>`;
+    output += `<p><span class="method">Test for 'fox':</span> ${regex.test(str)}</p>`;
+    regex.lastIndex = 0; 
+    let execResult = regex.exec(str);
+    output += `<p><span class="method">Exec Result:</span> ${execResult}</p>`;
+    let matchResult = str.match(regex);
+    output += `<p><span class="method">Match Result:</span> ${matchResult}</p>`;
+    let replacedStr = str.replace(regex, "****");
+    output += `<p><span class="method">String after Replace:</span> ${replacedStr}</p>`;
+    document.getElementById("demo").innerHTML = output;
+  </script>
+</body>
+</html>

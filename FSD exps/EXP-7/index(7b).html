@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Window Object Example</title>
+</head>
+<body>
+  <h2>Using Window Object Properties and Methods</h2>
+  <p id="output"></p>
+  <button onclick="showWindowDetails()">Show Window Details</button>
+  <button onclick="openNewWindow()">Open New Window</button>
+  <button onclick="showAlert()">Show Alert</button>
+  <button onclick="closeWin()">Close New Window</button>
+  <script>
+    let newWin;
+    function showWindowDetails() {
+      let details = "Window inner width: " + window.innerWidth + "<br>" +
+                    "Window inner height: " + window.innerHeight + "<br>" +
+                    "Screen width: " + window.screen.width + "<br>" +
+                    "Screen height: " + window.screen.height;
+      document.getElementById("output").innerHTML = details;
+    }
+    function openNewWindow() {
+      newWin = window.open("", "NewWindow", "width=300,height=200");
+      newWin.document.write("<h3>This is a new window!</h3>");
+    }
+    function showAlert() {
+      window.alert("This is an alert using window object!");
+    }
+    function closeWin() {
+      if (newWin) {
+        newWin.close();
+      }
+    }
+  </script>
+</body>
+</html>
+

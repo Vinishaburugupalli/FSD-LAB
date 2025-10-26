@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box Model Separate Examples</title>
+  <style>
+     body {
+      /* font-family: Arial, sans-serif;
+      line-height: 1.6; */
+      text-align: center;
+    } 
+
+    .content-box {
+      width: 300px;
+      background-color: lightyellow;
+      margin: 20px auto;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .padding-box {
+      width: 300px;
+      background-color: lightgreen;
+      padding: 30px; 
+      margin: 20px auto;
+      border: 1px solid #ccc;
+    }
+
+    .border-box {
+      width: 300px;
+      background-color: lightblue;
+      padding: 10px;
+      border: 10px solid darkblue; 
+      margin: 20px auto;
+    }
+
+    .margin-box {
+      width: 300px;
+      background-color: pink;
+      padding: 20px;
+      border: 2px solid red;
+      margin: 50px auto; 
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Box Model Demonstration</h1>
+
+  <div class="content-box">
+    <b>Content:</b> This is the actual text inside the box.
+  </div>
+
+  <div class="padding-box">
+    <b>Padding:</b> Notice extra space inside the border.
+  </div>
+
+  <div class="border-box">
+    <b>Border:</b> The thick dark blue border surrounds the content + padding.
+  </div>
+
+  <div class="margin-box">
+    <b>Margin:</b> Notice the extra gap outside this box.
+  </div>
+</body>
+</html>

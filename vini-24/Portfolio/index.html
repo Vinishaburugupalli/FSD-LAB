@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vinisha Burugupalli — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="avatar-wrap">
+        <!-- replace with your photo: images/avatar.jpg -->
+        <img src="my_image.jpg" alt="Vinisha avatar" class="avatar">
+      </div>
+
+      <nav class="side-nav" aria-label="Sections">
+        <button class="nav-btn active" data-section="about">About me</button>
+        <button class="nav-btn" data-section="certificates">Certificates</button>
+        <button class="nav-btn" data-section="projects">Projects</button>
+        <button class="nav-btn" data-section="contact">Contact me</button>
+      </nav>
+    </aside>
+
+    <!-- CENTER: MAIN CONTENT (dynamic) -->
+    <main class="main">
+      <!-- Header / Title area -->
+      <header class="main-header">
+        <h1 class="name">Burugupalli Vinisha</h1>
+        <p class="subtitle">B.Tech (IT) • Frontend & MERN • Seeking internships</p>
+      </header>
+
+      <!-- Sections -->
+      <section id="about" class="section active">
+  <h2>About Me</h2>
+
+  <div class="about-single-box">
+
+    <h3>Objective</h3>
+    <p>
+      A passionate Information Technology student eager to gain practical experience
+      in web & MERN projects, contribute to real teams, and learn continuously.
+    </p>
+
+    <h3>Education</h3>
+    <ul>
+      <li><strong>B.Tech (IT)</strong> — Sasi Institute of Technology & Engineering — CGPA: 7.86</li>
+      <li><strong>Intermediate (MPC)</strong> — Sasi Jr. College — 91.8%</li>
+      <li><strong>SSC</strong> — Sasi English Medium High School — CGPA: 10.0</li>
+    </ul>
+
+    <h3>Technical Skills</h3>
+    <p>HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, SQL</p>
+
+    <h3>Soft Skills & Activities</h3>
+    <ul>
+      <li>Willingness to learn, Teamwork, Communication</li>
+      <li>Competitive coding — CodeChef & HackerRank practice</li>
+      <li>Workshops: Generative AI, Power BI, Linux fundamentals</li>
+    </ul>
+
+  </div>
+</section>
+
+      <section id="certificates" class="section">
+        <h2>Certificates</h2>
+        <p>Click any certificate to view full size.</p>
+
+        <div class="cert-grid">
+          <!-- Replace data-src with your certificate image paths -->
+          <div class="cert-card" data-src="INTERNSHIP.jpg">
+            <img src="INTERNSHIP.jpg" alt="cert1">
+            <div class="cert-title">AI/ML Internship</div>
+          </div>
+
+          <div class="cert-card" data-src="GEN-AI.jpg">
+            <img src="GEN-AI.jpg" alt="cert2">
+            <div class="cert-title">Generative AI Workshop</div>
+          </div>
+
+          <div class="cert-card" data-src="RED HAT.jpg">
+            <img src="RED HAT.jpg" alt="cert3">
+            <div class="cert-title">Red Hat RH104</div>
+          </div>
+
+          <div class="cert-card" data-src="CODECHEF.jpg">
+            <img src="CODECHEF.jpg" alt="cert4">
+            <div class="cert-title">CodeChef Achievement</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+
+        <div class="project-list">
+          <article class="project-item">
+            <h3>Movie Ticket Reservation System</h3>
+            <p>Full-stack MERN app with authentication, seat selection and responsive UI.</p>
+            <div class="project-meta">Tech: React, Node, Express, MongoDB</div>
+          </article>
+
+          <article class="project-item">
+            <h3>Responsive Landing Page</h3>
+            <p>Modern one-page site with smooth navigation and accessible layout.</p>
+            <div class="project-meta">Tech: HTML, CSS, JS</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+  <h2>Get In Touch</h2>
+  <p class="subhead">Have a question or want to work together? Feel free to reach out!</p>
+
+  <div class="contact-grid">
+    <!-- LEFT: contact details + opportunities -->
+    <div class="contact-left">
+      <div class="contact-intro">
+        <h3>Let's Connect</h3>
+        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+      </div>
+
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="contact-icon" aria-hidden="true">📧</div>
+          <div class="contact-body">
+            <div class="card-title">Email</div>
+            <div class="card-value"><a href="mailto:vinishaburuguapalli@gmail.com">vinishaburuguapalli@gmail.com</a></div>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon" aria-hidden="true">📞</div>
+          <div class="contact-body">
+            <div class="card-title">Phone</div>
+            <div class="card-value">+91 63037 14171</div>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon" aria-hidden="true">📍</div>
+          <div class="contact-body">
+            <div class="card-title">Location</div>
+            <div class="card-value">Chilakapadu, Undrajavaram, East Godavari</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Open to Opportunities box -->
+      <div class="opportunities-box">
+        <h4>Open to Opportunities</h4>
+        <p>Currently seeking internships and collaborative projects. Let's build something amazing together!</p>
+      </div>
+    </div>
+
+    <!-- RIGHT: contact form -->
+    <div class="contact-right">
+      <div class="form-card">
+        <label for="nameIn">Name</label>
+        <input id="nameIn" placeholder="Your name" required>
+
+        <label for="emailIn">Email</label>
+        <input id="emailIn" placeholder="your.email@example.com" required>
+
+        <label for="msgIn">Message</label>
+        <textarea id="msgIn" rows="6" placeholder="Your message..." required></textarea>
+
+        <div class="form-actions">
+          <button class="btn send-lg" onclick="sendMessage()">Send Message</button>
+          
+        </div>
+
+        <div id="formStatus" class="muted" style="margin-top:12px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <!-- RIGHT: small info / address column -->
+    <aside class="right-col">
+      <div class="info-box">
+        <h4>Address</h4>
+        <div>Chilakapadu Village</div>
+        <div>Undrajavaram Mandal</div>
+        <div>East Godavari District, Andhra Pradesh</div>
+        <div>PIN: 534216</div>
+      </div>
+
+      <div class="info-box">
+        <h4>Coding Profile</h4>
+        <ul>
+          <li><a href="https://www.codechef.com/users/vinishab">CodeChef</a></li>
+          <li><a href="https://www.hackerrank.com/profile/23K61A1224">HackerRank</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <!-- full-image modal for certificates -->
+  <div id="imgModal" class="img-modal" role="dialog" aria-hidden="true">
+    <div class="img-panel">
+      <button class="img-close" aria-label="Close" onclick="closeImgModal()">✕</button>
+      <img id="imgModalImg" src="" alt="certificate">
+      <div id="imgModalTitle" class="img-caption"></div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
